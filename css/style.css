@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Black Ops One', cursive;
+  background-color: lightblue;
 }
 
 ul li {
@@ -19,8 +20,11 @@ ul li {
 
 .carta {
   display: inline-block;
-  width: 50px;
-  height: 80px;
+  width: 150px;
+  height: 200px;
   border: 1px solid black;
   border-radius: 10px;
+  background-image: url("../img/pattern.png");
+  background-size: 280px;
+  background-repeat: repeat;
 }
