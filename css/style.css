@@ -9,6 +9,10 @@ body {
   background-color: #00bcd4;
 }
 
+header, footer {
+  margin: 20px auto;
+}
+
 ul li {
   list-style: none;
 }
@@ -26,7 +30,7 @@ ul li {
 .carta {
   display: inline-block;
   width: 150px;
-  height: 200px;
+  height: 190px;
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 1px 1px 1px #000;
@@ -39,7 +43,7 @@ ul li {
 .foto {
   position: absolute;
   display: none;
-  top: 20px;
+  top: 10px;
   left: 10px;
 }
 .scritta {
@@ -49,7 +53,7 @@ ul li {
   left: 10px;
   position: absolute;
   color: white;
-  line-height: 50px;
+  line-height: 40px;
 }
 
 .carta:hover {
