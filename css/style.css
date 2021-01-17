@@ -5,13 +5,14 @@
 }
 
 body {
-  font-family: 'Black Ops One', cursive;
+  font-family: 'Black Ops One', sans-serif;
   background-color: lightblue;
 }
 
 ul li {
   list-style: none;
 }
+
 .container {
   width: 80%;
   margin: auto;
@@ -24,15 +25,11 @@ ul li {
   height: 200px;
   border: 1px solid black;
   border-radius: 10px;
+  box-shadow: 1px 1px 1px #000;
   background-image: url("../img/pattern.png");
   background-size: 280px;
   background-repeat: repeat;
   position: relative;
-}
-
-.carta.balloon:hover {
-  background-color: white;
-  background-image: none;
 }
 
 .foto {
@@ -41,13 +38,6 @@ ul li {
   top: 20px;
   left: 10px;
 }
-
-.carta.balloon:hover .foto{
-  display: block;
-  width: 130px;
-  height: 130px;
-}
-
 .scritta {
   width: 130px;
   height: 50px;
@@ -55,12 +45,43 @@ ul li {
   left: 10px;
   position: absolute;
   color: white;
+  line-height: 50px;
 }
 
-.carta.balloon:hover .scritta.balloon{
+.carta:hover {
+  background-color: white;
+  background-image: none;
+}
+
+.carta:hover .foto{
+  display: block;
+  width: 130px;
+  height: 130px;
+}
+
+.carta:hover {
+  box-shadow: -1px -1px 1px #000;
+}
+
+.carta:hover .scritta{
   color: orange;
 }
 
-.carta.balloon:active .scritta.balloon{
-  color: purple;
+.carta:active .scritta{
+  color: green;
+}
+
+li:nth-child(2) .carta:nth-child(3) {
+  background-color: white;
+  background-image: none;
+  box-shadow: -1px -1px 1px #000;
+
+}
+li:nth-child(2) .carta:nth-child(3) .foto{
+  display: block;
+  width: 130px;
+  height: 130px;
+}
+li:nth-child(2) .carta:nth-child(3) .scritta{
+  color: green;
 }
