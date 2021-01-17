@@ -6,11 +6,15 @@
 
 body {
   font-family: 'Black Ops One', sans-serif;
-  background-color: lightblue;
+  background-color: #00bcd4;
 }
 
 ul li {
   list-style: none;
+}
+
+.container {
+  color: #840000;
 }
 
 .container {
@@ -70,6 +74,7 @@ ul li {
 .carta:active .scritta{
   color: green;
 }
+
 
 li:nth-child(2) .carta:nth-child(3) {
   background-color: white;
